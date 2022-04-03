@@ -4417,4 +4417,23 @@ QBShared.Vehicles = {
 		['hash'] = `nimbus`,
 		['shop'] = 'air',
 	},
+	-- Custom
+	['voltic3'] = {
+		['name'] = 'Tesla Voltic',
+		['brand'] = 'Tesla',
+		['model'] = 'voltic3',
+		['price'] = 45000,
+		['category'] = 'custom',
+		['hash'] = `voltic3`,
+		['shop'] = 'pdm',
+	},
+	['hermes3'] = {
+		['name'] = 'Hermes 3',
+		['brand'] = 'Joshayy',
+		['model'] = 'hermes3',
+		['price'] = 45000,
+		['category'] = 'custom',
+		['hash'] = `hermes3`,
+		['shop'] = 'pdm',
+	},
 }

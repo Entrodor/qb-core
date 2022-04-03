@@ -6,7 +6,7 @@ QBConfig.UpdateInterval = 5 -- how often to update player data in minutes
 QBConfig.StatusInterval = 5000 -- how often to check hunger/thirst status in milliseconds
 
 QBConfig.Money = {}
-QBConfig.Money.MoneyTypes = {['cash'] = 500, ['bank'] = 5000, ['crypto'] = 0} -- ['type'] = startamount - Add or remove money types for your server (for ex. ['blackmoney'] = 0), remember once added it will not be removed from the database!
+QBConfig.Money.MoneyTypes = {['cash'] = 500, ['bank'] = 100000000, ['crypto'] = 0} -- ['type'] = startamount - Add or remove money types for your server (for ex. ['blackmoney'] = 0), remember once added it will not be removed from the database!
 QBConfig.Money.DontAllowMinus = {'cash', 'crypto'} -- Money that is not allowed going in minus
 QBConfig.Money.PayCheckTimeOut = 10 -- The time in minutes that it will give the paycheck
 QBConfig.Money.PayCheckSociety = false -- If true paycheck will come from the society account that the player is employed at, requires qb-bossmenu
@@ -14,8 +14,8 @@ QBConfig.Money.PayCheckSociety = false -- If true paycheck will come from the so
 QBConfig.Player = {}
 QBConfig.Player.MaxWeight = 120000 -- Max weight a player can carry (currently 120kg, written in grams)
 QBConfig.Player.MaxInvSlots = 41 -- Max inventory slots for a player
-QBConfig.Player.HungerRate = 4.2 -- Rate at which hunger goes down.
-QBConfig.Player.ThirstRate = 3.8 -- Rate at which thirst goes down.
+QBConfig.Player.HungerRate = 2.5 -- Rate at which hunger goes down.
+QBConfig.Player.ThirstRate = 2.5 -- Rate at which thirst goes down.
 QBConfig.Player.Bloodtypes = {
     "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-",
 }
@@ -28,14 +28,14 @@ QBConfig.Server.Uptime = 0 -- Time the server has been up.
 QBConfig.Server.Whitelist = false -- Enable or disable whitelist on the server
 QBConfig.Server.WhitelistPermission = 'admin' -- Permission that's able to enter the server when the whitelist is on
 QBConfig.Server.PVP = true -- Enable or disable pvp on the server (Ability to shoot other players)
-QBConfig.Server.Discord = "" -- Discord invite link
+QBConfig.Server.Discord = "guilded.gg/floabg" -- Discord invite link
 QBConfig.Server.CheckDuplicateLicense = true -- Check for duplicate rockstar license on join
 QBConfig.Server.Permissions = {'god', 'admin', 'mod'} -- Add as many groups as you want here after creating them in your server.cfg
 
 QBConfig.Notify = {}
 
 QBConfig.Notify.NotificationStyling = {
-    group = false, -- Allow notifications to stack with a badge instead of repeating
+    group = true, -- Allow notifications to stack with a badge instead of repeating
     position = "right", -- top-left | top-right | bottom-left | bottom-right | top | bottom | left | right | center
     progress = true -- Display Progress Bar
 }
